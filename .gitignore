@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件 / 编辑器缓存
+*.tmp
+*.log
+.vscode/
+.idea/
+
+# 原始工程文件不入库（体积大，且可能带本机路径）
+*.blend
+*.blend1
+*.psd
+*.aep

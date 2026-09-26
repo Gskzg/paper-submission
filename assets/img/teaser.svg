@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1620 710" width="1620" height="710" role="img" aria-label="Placeholder teaser: five-column qualitative comparison">
+  <defs>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f9fc"/>
+      <stop offset="1" stop-color="#e6ebf3"/>
+    </linearGradient>
+    <linearGradient id="panelBgOurs" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f8ff"/>
+      <stop offset="1" stop-color="#dfe8fb"/>
+    </linearGradient>
+
+    <filter id="soft1" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.1"/>
+    </filter>
+    <filter id="soft2" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <filter id="soft3" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+
+    <g id="room">
+      <rect x="0" y="80" width="304" height="350" fill="#eef1f7"/>
+      <polygon points="0,430 304,430 304,560 0,560" fill="#dce3ef"/>
+      <line x1="0" y1="430" x2="304" y2="430" stroke="#c6d0e0" stroke-width="2"/>
+      <rect x="40" y="248" width="92" height="182" rx="4" fill="#b6c4da"/>
+      <rect x="140" y="300" width="14" height="130" rx="3" fill="#c3cfe2"/>
+      <rect x="186" y="318" width="78" height="112" rx="4" fill="#cbd6e7"/>
+      <circle cx="152" cy="404" r="26" fill="#aab8ce"/>
+      <rect x="212" y="150" width="66" height="46" rx="4" fill="#d3dced"/>
+    </g>
+  </defs>
+
+  <rect width="1620" height="710" fill="#ffffff"/>
+  <text x="810" y="34" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" letter-spacing="1.5" fill="#8b93a3">PLACEHOLDER FIGURE — REPLACE WITH YOUR OWN TEASER IMAGE</text>
+
+  <!-- 1. Reference -->
+  <g transform="translate(20,52)">
+    <clipPath id="clip1"><rect width="304" height="638" rx="16"/></clipPath>
+    <g clip-path="url(#clip1)">
+      <rect width="304" height="638" fill="url(#panelBg)"/>
+      <use href="#room"/>
+    </g>
+    <rect x="0.5" y="0.5" width="303" height="637" rx="16" fill="none" stroke="#c9d2e0" stroke-width="1"/>
+    <text x="152" y="610" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="27" fill="#3a4250">Reference</text>
+  </g>
+
+  <!-- 2. Blender Builder -->
+  <g transform="translate(339,52)">
+    <clipPath id="clip2"><rect width="304" height="638" rx="16"/></clipPath>
+    <g clip-path="url(#clip2)">
+      <rect width="304" height="638" fill="url(#panelBg)"/>
+      <use href="#room" filter="url(#soft1)" opacity="0.92"/>
+      <rect x="120" y="196" width="60" height="40" rx="3" fill="#c3cfe2" opacity="0.85"/>
+    </g>
+    <rect x="0.5" y="0.5" width="303" height="637" rx="16" fill="none" stroke="#c9d2e0" stroke-width="1"/>
+    <text x="152" y="610" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="27" fill="#3a4250">Blender Builder</text>
+  </g>
+
+  <!-- 3. Code2Worlds -->
+  <g transform="translate(658,52)">
+    <clipPath id="clip3"><rect width="304" height="638" rx="16"/></clipPath>
+    <g clip-path="url(#clip3)">
+      <rect width="304" height="638" fill="url(#panelBg)"/>
+      <use href="#room" filter="url(#soft2)" opacity="0.88"/>
+      <rect x="150" y="236" width="86" height="58" rx="3" fill="#c8d3e5" opacity="0.8" transform="rotate(-7 150 236)"/>
+      <polygon points="46,430 120,392 200,430 120,462" fill="#cfd9e9" opacity="0.75"/>
+    </g>
+    <rect x="0.5" y="0.5" width="303" height="637" rx="16" fill="none" stroke="#c9d2e0" stroke-width="1"/>
+    <text x="152" y="610" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="27" fill="#3a4250">Code2Worlds</text>
+  </g>
+
+  <!-- 4. VIGA -->
+  <g transform="translate(977,52)">
+    <clipPath id="clip4"><rect width="304" height="638" rx="16"/></clipPath>
+    <g clip-path="url(#clip4)">
+      <rect width="304" height="638" fill="url(#panelBg)"/>
+      <use href="#room" filter="url(#soft3)" opacity="0.82"/>
+      <ellipse cx="150" cy="400" rx="92" ry="46" fill="#c2cee2" opacity="0.7"/>
+    </g>
+    <rect x="0.5" y="0.5" width="303" height="637" rx="16" fill="none" stroke="#c9d2e0" stroke-width="1"/>
+    <text x="152" y="610" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="27" fill="#3a4250">VIGA</text>
+  </g>
+
+  <!-- 5. Ours -->
+  <g transform="translate(1296,52)">
+    <clipPath id="clip5"><rect width="304" height="638" rx="16"/></clipPath>
+    <g clip-path="url(#clip5)">
+      <rect width="304" height="638" fill="url(#panelBgOurs)"/>
+      <use href="#room"/>
+      <rect x="40" y="248" width="92" height="182" rx="4" fill="none" stroke="#2f5bd7" stroke-width="3" opacity="0.55"/>
+    </g>
+    <rect x="1.5" y="1.5" width="301" height="635" rx="16" fill="none" stroke="#2f5bd7" stroke-width="3"/>
+    <text x="152" y="610" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="bold" fill="#1d43ad">Ours</text>
+  </g>
+</svg>
